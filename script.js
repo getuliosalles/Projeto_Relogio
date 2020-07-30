@@ -59,4 +59,8 @@ document.getElementById('zerar').onclick = function(){
     time_past = 0
     hora_inicio = new Date().getTime()
     document.getElementById('cronometro').innerHTML = "00:00:00  000"
+    document.getElementById('hora').innerHTML = '00'
+    document.getElementById('minut').innerHTML = '00'
+    document.getElementById('seg').innerHTML = '00'
+    document.getElementById('milis').innerHTML = '000'
 }
