@@ -2,7 +2,7 @@ body{
     background-color: rgb(104, 103, 103);
 }
 
-#cronometro {
+.mostrador {
     font-size: 24px;
     font-weight: bold;
     color: white;

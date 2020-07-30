@@ -40,6 +40,10 @@ document.getElementById('comecar_parar').onclick = function(){
 
 
             document.getElementById('cronometro').innerHTML = `${h}:${m}:${s}  ${milis}`
+            document.getElementById('hora').innerHTML = h
+            document.getElementById('minut').innerHTML = m
+            document.getElementById('seg').innerHTML = s
+            document.getElementById('milis').innerHTML = milis
 
 
         },10)
