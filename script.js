@@ -32,6 +32,7 @@ document.getElementById('comecar_parar').onclick = function(){
 
            s = add_zero(seg = Math.floor(resto / 1000))
             resto -= (seg * 1000)
+            
 
            milis = add_zero(miliseg = resto)
 
