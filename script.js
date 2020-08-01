@@ -39,14 +39,9 @@ document.getElementById('comecar_parar').onclick = function(){
                 }else{
                     return `${number}`
                 }
-            }
-            
+            }            
 
            milis = add_milis(add_zero(miliseg = resto))
-
-            
-
-
 
             document.getElementById('cronometro').innerHTML = `${h}:${m}:${s}  ${milis}`
             document.getElementById('hora').innerHTML = h

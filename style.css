@@ -3,6 +3,7 @@ body{
 }
 
 .mostrador {
+    margin: 100px 300px;
     font-size: 50pt;
     font-weight: bold;
     color: white;
@@ -17,12 +18,16 @@ body{
 }
 .hora{
     display: inline;
+    background-color: white;
+    p
 }
 .minut{
     display: inline;
+    background-color: white;
 }
 .seg{
     display: inline;
+    background-color: white;
 }
 .milis{
     display: inline;
