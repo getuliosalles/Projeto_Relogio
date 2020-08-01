@@ -12,25 +12,33 @@ body{
     padding: 20px;
     display: inline-block;
     width: 580px;
+    height: 150px;
+
+    /* vertical-align: middle; */
     max-width: 100%;
     text-align: center;
+    
     text-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
 }
 .hora{
+    margin: 50px auto;
     display: inline;
     background-color: whitesmoke;
-    padding: 7px;
+    padding: 20px 7px 20px;
+    /* padding-bottom: 7px ; */
     border-radius: 5px;
 }
 .minut{
     display: inline;
     background-color: whitesmoke;
     padding: 7px;
+    border-radius: 5px;
 }
 .seg{
     display: inline;
     background-color: whitesmoke;
     padding: 7px;
+    border-radius: 5px;
 }
 .milis{
     display: inline;
@@ -39,4 +47,5 @@ body{
     color: brown;
     background-color: whitesmoke;
     margin: 5px;
+    border-radius: 5px;
 }
