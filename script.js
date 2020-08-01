@@ -1,4 +1,4 @@
-var inicio = false, hora_inicio, init_cronom, hora_atual, time_past, hora, minut, seg, miliseg, h, m, s, milis
+var inicio = false, hora_inicio, init_cronom, hora_atual, time_past, hora, minut, seg, miliseg, h, m, s, milis, tempo, horas, minutos, segundos, data
 
 document.getElementById('comecar_parar').onclick = function(){
 
@@ -68,3 +68,8 @@ document.getElementById('zerar').onclick = function(){
     document.getElementById('seg').innerHTML = '00'
     document.getElementById('milis').innerHTML = '000'
 }
+
+tempo = new Date()
+horas = tempo.getHours()
+minutos = tempo.getMinutes()
+segundos = tempo.getSeconds()
