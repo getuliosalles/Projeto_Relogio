@@ -85,7 +85,7 @@ init_hora = window.setInterval(function(){
     segundos = tempo.getSeconds()
 
     dia_mes = tempo.getDate()
-    mes = tempo.getMonth()
+    mes = tempo.getMonth() + 1
     ano = tempo.getFullYear()
 
     // miliseg = tempo.getTime()
