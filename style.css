@@ -13,6 +13,7 @@ body{
     display: inline-block;
     width: 580px;
     height: 150px;
+    border-radius: 5px 5px 90px 5px;
 
     /* vertical-align: middle; */
     max-width: 100%;
@@ -48,4 +49,10 @@ body{
     background-color: whitesmoke;
     margin: 5px;
     border-radius: 5px;
+}
+
+/* ---------- Relógio ------------- */
+
+.relogio: {
+
 }

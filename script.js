@@ -1,14 +1,16 @@
-var inicio = false, hora_inicio, init_cronom, hora_atual, time_past, hora, minut, seg, miliseg, h, m, s, milis, tempo, horas, minutos, segundos, data
+var inicio = false, hora_inicio, init_cronom, hora_atual, time_past, hora, minut, seg, miliseg, h, m, s, milis, tempo, horas, minutos, segundos, dia_semana, dia_mes, mes, ano, init_hora
+
+function add_zero(number){
+    if(number < 10){
+        return '0'+`${number}`
+    }else{
+        return `${number}`
+    }
+}
 
 document.getElementById('comecar_parar').onclick = function(){
 
-    function add_zero(number){
-        if(number < 10){
-            return '0'+`${number}`
-        }else{
-            return `${number}`
-        }
-    }
+    
 
     if(!inicio){
         inicio = true
@@ -69,7 +71,37 @@ document.getElementById('zerar').onclick = function(){
     document.getElementById('milis').innerHTML = '000'
 }
 
-tempo = new Date()
-horas = tempo.getHours()
-minutos = tempo.getMinutes()
-segundos = tempo.getSeconds()
+
+document.getElementById('relogio').onclick = () =>{
+    hora_inicio = new Date().getTime()
+
+init_hora = window.setInterval(function(){
+
+   
+
+    tempo = new Date()
+    horas = tempo.getHours()
+    minutos = tempo.getMinutes()
+    segundos = tempo.getSeconds()
+
+    dia_mes = tempo.getDate()
+    mes = tempo.getMonth()
+    ano = tempo.getFullYear()
+
+    // miliseg = tempo.getTime()
+    // mseg = miliseg - hora_inicio
+    console.log(horas,minutos,segundos)
+    document.getElementById('hora').innerHTML = add_zero(horas)
+    document.getElementById('minut').innerHTML = add_zero(minutos)
+    document.getElementById('seg').innerHTML = add_zero(segundos)
+    document.getElementById('milis').innerHTML = `${dia_mes} / ${mes} / ${ano}`
+},10)
+
+
+// document.getElementById('cronometro').innerHTML = `${horas}:${minutos}:${segundos}`
+
+
+    
+    
+
+}
